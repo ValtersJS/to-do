@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import Table from './App';
 
 ReactDOM.render(
-  <Table/>,
+  <React.StrictMode>
+    <Table/> 
+  </React.StrictMode>,
   document.getElementById('root')
 );
