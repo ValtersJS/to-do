@@ -1,13 +1,6 @@
-import './App.css';
+import React from "react";
+import Header from "Header.js";
 
-function Table() {
-  return (
-      <ul>
-        <li>Apple</li>
-        <li>Samsung</li>
-        <li>VEF</li>
-      </ul>
-  );
+export default function App() {
+  
 }
-
-export default Table;
