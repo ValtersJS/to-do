@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 export default function NewTask({ newTask, handleChange, handleSubmit }) {
   return(
@@ -6,7 +6,7 @@ export default function NewTask({ newTask, handleChange, handleSubmit }) {
       <input
         name="title"
         placeholder="New Task"
-        value={newTask.title}
+        value={newTask.title || ""}
         onChange={handleChange}
       />
 
@@ -15,7 +15,7 @@ export default function NewTask({ newTask, handleChange, handleSubmit }) {
           <textarea
             name="description"
             placeholder='description'
-            value="newTask.description"
+            value={newTask.description || ""}
             onChange={handleChange}
           />
           <button type="submit">Add Task</button>
